@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>AI Voice Email Assistant</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f5f4;
+      padding: 40px;
+    }
+    .container {
+      max-width: 600px;
+      margin: auto;
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+    button {
+      width: 100%;
+      padding: 12px;
+      background: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    button.cancel {
+      background: #f44336;
+    }
+    #output {
+      margin-top: 12px;
+      padding: 10px;
+      background: #fafafa;
+      border: 1px solid #ddd;
+      min-height: 40px;
+    }
+    #preview {
+      margin-top: 20px;
+      padding: 15px;
+      background: #e3f2fd;
+      border-radius: 8px;
+    }
+    pre {
+      white-space: pre-wrap;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h2>🎤 AI Voice Email Assistant</h2>
+
+    <button onclick="startRecording()">🎤 Start Recording</button>
+
+    <div id="output">Waiting for voice command…</div>
+
+    <div id="preview" style="display:none;"></div>
+  </div>
+
+  <script src="contactManager.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
